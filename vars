@@ -1,0 +1,48 @@
+  var PLAYER_INITIAL_VELOCITY_BOOST=60; //player gets a little burst of velocity when a key is pressed
+	var PLAYER_ACCEL = 300; //the player's movement acceleration
+	var PLAYER_MAXSPEED = 600; //the player's top speed is capped
+	var PLAYER_DRAG = 0.45; //how quickly you slow down after letting go of the cursor keys
+	var PLAYER_HITBOX_WIDTH=20; //in shooters we want the player's collision box to have its own size
+	var PLAYER_HITBOX_HEIGHT=32;
+	var PLAYER_MAXHEALTH =5; //number of hits until player killed
+	var PLAYER_REVIVE_DELAY=2.25; //delay before player revived
+	var PLAYER_ANIMATE_FRAME_RATE = 30; //speed to animate plane moving left/right
+	var PLAYER_SAFE_ZONE = 450; //area at bottom of screen that the enemies won't move into
+	var PLAYER_DEATH_PAUSE = 0.3; //pause the game momentarily when the player dies
+	var PLAYER_EXPLOSION_SCALE = 1.25; //player explosion could be bigger than enemy explosions
+
+	var LARGE_EXPLOSION_FRAMERATE = 8; //frame rate for explosion animation
+	var SMALL_EXPLOSION_FRAMERATE = 60;
+	var EXPLOSION_SCREEN_SHAKE_TIME = 0.5; //we'll shake the screen when things explode
+	var EXPLOSION_SCREEN_SHAKE_AMOUNT = 12;
+  var ENEMY_EXPLODE_SCALE = 0.8;//how big should the enemy explosions be?xx
+	
+	var BULLET_SPEED = 280; //player's bullet speed
+	var BULLETS_INHERIT_PLAYER_VELOCITY = 0.1; //should bullets pick up speed from player?
+	var BULLET_ACCELERATION = 50; //player's bullet acceleration: negative values slow bullets down
+	var BULLET_AUTOFIRE = true; //should the gun fire when the fire button is held down?
+	var BULLET_AUTOFIRE_DELAY = 0.25; //time between autofires
+	var MAX_NUM_BULLETS = 3; //max number of bullets onscreen
+	var BULLET_STARTPOS = -12; //start bullets some number of pixels from edge of player body 
+
+	var ENEMY_MAXSPEED = 150;  //enemy top speed
+	var ENEMY_ACCEL = 100; //enemies accelerate toward a random point
+	var ENEMY_DODGESPEED = 20; //enemies add additional speed to avoid the player shooting them
+	var ENEMY_VERTICAL_DODGERANGE = 380; //enemies try and dodge the player if closer than this
+	var ENEMY_HORIZONTAL_DODGERANGE = 12; //enemies try and dodge the player if closer than this
+	var ENEMY_BULLET_SPEED=350; //speed of enemy bullets
+	var ENEMY_BULLET_DRAG=0.99; //make enemy bullets slow down every frame, multiplying velocity by this
+	var ENEMY_BULLET_DAMAGE=1; //bullets do this much damage to player
+	var ENEMY_TOUCH_DAMAGE=2; //player receives this much damage when touching enemy
+	var ENEMY_FIRE_DELAY_MAX = 6.0; //enemy bullets spawn at a random interval
+	var ENEMY_FIRE_DELAY_MIN = 0.2;
+	var ENEMY_SPAWN_RATE = 2500; //delay between enemy spawning (in milliseconds)
+	var ENEMY_BOUNCE = 0.4; //amount enemies bounce on colliding with walls or the player
+	var ENEMY_MAXHEALTH = 2; //number of hits before enemy killed
+	var MAX_NUM_ENEMIES = 12; //max number of enemies on screen
+	var MAX_NUM_ENEMY_BULLETS = 24;//max number of enemy bullets onscreen
+	
+	var SCROLL_SPEED = 0.02; //background scrolling speed
+	var SCROLL_PARALLAX_DEPTH = 2.5; //higher values make a bigger speed difference between background layers
+	
+	var DEBUG = false; //show debug bodies
